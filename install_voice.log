@@ -1,0 +1,15 @@
+Installing voice mode into C:\Users\Awais123\openchat\ai-assistant
+  $ (cd api && uv sync)
+  $ (cd agent && uv sync)
+
+Traceback (most recent call last):
+  File "C:\Users\Awais123\openchat\.claude\skills\livekit-voice-mode\scripts\install_voice.py", line 425, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\Awais123\openchat\.claude\skills\livekit-voice-mode\scripts\install_voice.py", line 406, in main
+    print(f"  \u2713 {line}")
+    ~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Awais123\AppData\Roaming\uv\python\cpython-3.13-windows-x86_64-none\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
